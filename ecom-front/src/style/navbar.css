@@ -1,0 +1,232 @@
+.con
+{
+    background-color:rgb(49, 170, 218);
+    height: 90px;
+}
+
+.dropdown:hover .dropdown-menu 
+{
+    display: block;
+}
+
+#mybtn
+{
+    align-items: center;
+    width: 2.5%;
+    border-color: gray; 
+    background-color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+#mybtn:hover
+{
+    background-color: rgb(160, 211, 231);
+}
+
+#mynav
+{
+    margin-top: -25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-link
+{
+    font-size: medium;
+}
+
+.form-inputs{
+    position:relative;
+}
+.form-inputs .form-control
+{
+    height:45px; 
+    font-size: medium;
+}
+
+.form-inputs .form-control:focus
+{
+    box-shadow:none;
+    border:1px solid #000;
+}
+
+.form-inputs i
+{
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.form-control
+{
+    align-items: center;
+    vertical-align: middle;
+    width: 60%;
+    border-color:  gray; 
+    margin-top: 6px;
+    margin-bottom: 15px;
+    margin-left: 320px;
+}
+
+.shop-bag
+{
+    background-color:#000;
+    color:rgb(255, 255, 255);
+    height:35px;
+    width:35px;
+    font-size:25px;
+    font-weight: bold;
+    display:flex;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-right: -5px;
+}
+
+.total
+{
+    font-size: small;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.fw
+{
+    font-size: small;
+}
+
+.rounded-circle
+{
+    margin-top: -25px;
+    margin-bottom: 0px;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbar-nav
+{
+    position: absolute;
+}
+
+.dropdown
+{
+    z-index: 999;
+    position: relative;
+    float: center;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: rgb(160, 211, 231);
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown .dropbtn 
+{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: rgb(255, 255, 255);
+  
+}
+
+  
+#mybtn2
+{
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+#mybtn2:hover
+{
+    background-color: rgb(160, 211, 231)
+}
+
+#mybtn3
+{
+    color: black;
+    font-size: small;
+    margin-top: -8px;
+    margin-left: 100px;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+#mybtn3:hover
+{
+    background-color: rgb(160, 211, 231)
+}
+
+.label
+{
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+#mycatbar
+{
+    background-color: rgb(160, 211, 231);
+}
+
+#one:hover
+{
+    background-color: rgb(160, 211, 231);
+}
+
+.dropdown-item
+{
+    font-size: small;
+}
+
+.title
+{
+    margin-left: -300px;
+    margin-top: 15px;
+}
+
+.header
+{
+    font-weight: bold;
+}
+  
