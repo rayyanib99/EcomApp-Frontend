@@ -9,7 +9,8 @@ import './style/navbar.css';
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Navbar() {
+function Navbar() 
+{
   return (
     <div className="main-navbar shadow-sm">
       <section className="header-main border-bottom bg-white">
@@ -92,8 +93,7 @@ function Navbar() {
 </nav>
 	</div>
   
-  );
-  
+    ); 
 }
 
 export default Navbar

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/js/dist/collapse';
@@ -8,25 +7,30 @@ import { useEffect, useState } from 'react';
 import productServices from '../services/productServices';
 import '../list.css';
 
-const ListProducts = () => {
-
+const ListProducts = () => 
+{
   const [products, setProduct] = useState([]);
 
-  useEffect(() => {
-
+  useEffect(() => 
+  {
     getAllProducts();
 }, [])
 
-const getAllProducts = () => {
-  productServices.getAllProducts().then((response) => {
-        setProduct(response.data)
-        console.log(response.data);
-    }).catch(error =>{
-        console.log(error);
-    })
+const getAllProducts = () => 
+{
+  productServices.getAllProducts().then((response) => 
+  {
+      setProduct(response.data)
+      console.log(response.data);
+  })
+  .catch(error =>
+  {
+      console.log(error);
+  })
 }
 
-const styles = {
+const styles = 
+{
   color: 'blue',
   width: 200
 }

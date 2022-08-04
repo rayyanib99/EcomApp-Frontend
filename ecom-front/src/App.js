@@ -4,7 +4,8 @@ import Navbar from './Navbar';
 import ListProducts from './components/ListProducts';
 import Button from "react-bootstrap/Button";
 
-function App() {
+function App() 
+{
   return (
     <div className="App">
     

@@ -3,33 +3,40 @@ import { useEffect, useState } from 'react';
 import CartServices from "../../services/cartServices";
 import { Link, useHistory } from 'react-router-dom';
 
-const Cart = () => {
-
+const Cart = () => 
+{
     const [carts, setCart] = useState([]);
 
-    const init = () => {
+    const init = () => 
+    {
         CartServices.getAll()
-        .then(response => {
+        .then(response => 
+        {
             console.log('Printing all the Product in Console', response.data);
             setCart(response.data);
         })
-        .catch(error => {
+        .catch(error => 
+        {
             console.log('Something went wrong ', error);
         })
     }
 
-    useEffect(() => {
+    useEffect(() => 
+    {
         init();
     }, []);
 
-    const removeOrder = (id) => {
+    const removeOrder = (id) =>
+    {
         console.log('Printing id', id);
         CartServices.remove(id)
-        .then(response => {
+        .then(response => 
+        {
             console.log("Order removed successfully", response.data);
             init();
         })
-        .catch(error => {
+        .catch(error => 
+        {
             console.log("Something went wrong", error);
         })
     }
@@ -53,7 +60,8 @@ const Cart = () => {
                 </thead>
                 <tbody>
                     {
-                        carts.map(cart => (
+                        carts.map(cart => 
+                        (
                             <tr key={cart.productId}>
                                 <td>{cart.productImage}</td>
                                 <td>{cart.name}</td>
@@ -61,7 +69,8 @@ const Cart = () => {
                                 <td>{cart.unitPrice}</td>
                                 <td>{cart.category}</td>
                                 <td>
-                                    <button className='btn btn-danger ml-2 md' onClick={() => {
+                                    <button className='btn btn-danger ml-2 md' onClick={() => 
+                                    {
                                         removeOrder(cart.cartId)
                                     }}>
 
@@ -77,7 +86,7 @@ const Cart = () => {
         </div>
 
     </div>
-  )
+)
 }
 
 export default Cart

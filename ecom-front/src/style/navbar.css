@@ -37,9 +37,11 @@
     font-size: medium;
 }
 
-.form-inputs{
+.form-inputs
+{
     position:relative;
 }
+
 .form-inputs .form-control
 {
     height:45px; 
@@ -167,8 +169,7 @@
     background-color: rgb(255, 255, 255);
   
 }
-
-  
+ 
 #mybtn2
 {
     color: black;

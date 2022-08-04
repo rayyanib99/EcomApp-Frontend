@@ -4,7 +4,6 @@ const PRODUCT_BASE_REST_API_URL = 'http://localhost:8080/api/v1/products';
 
 class productServices
 {
-
     getAllProducts()
     {
         return axios.get(PRODUCT_BASE_REST_API_URL)

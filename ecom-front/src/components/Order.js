@@ -3,39 +3,44 @@ import { useEffect, useState } from 'react';
 import OrderServices from '../../services/orderServices';
 import { Link } from 'react-router-dom';
 
-const Order = () => {
-
+const Order = () => 
+{
     const [orders, setOrders] = useState([]);
 
-    const init = () => {
+    const init = () => 
+    {
         OrderServices.getAll()
-        .then(response => {
+        .then(response => 
+        {
             console.log('Printing all the Orders in Console', response.data);
             setOrders(response.data);
         })
-        .catch(error => {
+        .catch(error => 
+        {
             console.log('Something went wrong ', error);
         })
     }
 
-    useEffect(() => {
+    useEffect(() => 
+    {
         init();
     }, []);
 
 
-    const removeOrder = (id) => {
+    const removeOrder = (id) => 
+    {
         console.log('Printing id', id);
         OrderServices.remove(id)
-        .then(response => {
+        .then(response => 
+        {
             console.log("Order removed successfully", response.data);
             init();
         })
-        .catch(error => {
+        .catch(error => 
+        {
             console.log("Something went wrong", error);
         })
     }
-
-
 
   return (
     <div className='conatainer'>
@@ -59,7 +64,8 @@ const Order = () => {
                 </thead>
                 <tbody>
                     {
-                        orders.map(order => (
+                        orders.map(order => 
+                        (
                             <tr key={order.userId}>
                                 <td>{order.productImage}</td>
                                 <td>{order.name}</td>
@@ -71,7 +77,8 @@ const Order = () => {
                                 <td>{order.category}</td>
                                 <td>{order.unitPrice}</td>
                                 <td>
-                                    <button className='btn btn-danger ml-2 md' onClick={() => {
+                                    <button className='btn btn-danger ml-2 md' onClick={() => 
+                                    {
                                         removeOrder(order.orderId)
                                     }}>
 
@@ -87,7 +94,7 @@ const Order = () => {
         </div>
 
     </div>
-  )
+)
 }
 
 export default Order
