@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import CartServices from "../../services/cartServices";
+import CartServices from "../services/cartServices";
 import { Link, useHistory } from 'react-router-dom';
 
 const Cart = () => 
@@ -26,7 +26,7 @@ const Cart = () =>
         init();
     }, []);
 
-    const removeOrder = (id) =>
+    const removeItem = (id) =>
     {
         console.log('Printing id', id);
         CartServices.remove(id)
@@ -71,7 +71,7 @@ const Cart = () =>
                                 <td>
                                     <button className='btn btn-danger ml-2 md' onClick={() => 
                                     {
-                                        removeOrder(cart.cartId)
+                                        removeItem(cart.cartId)
                                     }}>
 
                                     Remove</button>

@@ -2,6 +2,7 @@
 {
     background-color:rgb(49, 170, 218);
     height: 90px;
+    border-color: rgb(49, 170, 218);
 }
 
 .dropdown:hover .dropdown-menu 
@@ -209,6 +210,8 @@
 #mycatbar
 {
     background-color: rgb(160, 211, 231);
+    border-color: rgb(160, 211, 231);
+    margin-top: -1px;
 }
 
 #one:hover

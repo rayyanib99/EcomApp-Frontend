@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import OrderServices from '../../services/orderServices';
+import OrderServices from '../services/orderServices';
 import { Link } from 'react-router-dom';
 
 const Order = () => 
@@ -82,7 +82,7 @@ const Order = () =>
                                         removeOrder(order.orderId)
                                     }}>
 
-                                    Reomove</button>
+                                    Cancel</button>
                                 </td>
 
                             </tr>
