@@ -38,7 +38,7 @@ export const User = () => {
  
   return (
     <div>
-        <div className='conatainer'>
+        <div className='container'>
         <h3>Users</h3>
         <hr/>
         <div>
@@ -53,7 +53,8 @@ export const User = () => {
                     <th>City</th>
                     <th>Country</th>
                     <th>Zipcode</th>
-                    <th>Adminstrador</th>
+                    <th>Administrator</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>

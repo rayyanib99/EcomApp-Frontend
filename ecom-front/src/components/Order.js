@@ -43,8 +43,8 @@ const Order = () =>
     }
 
   return (
-    <div className='conatainer'>
-        <h3>List of Orders</h3>
+    <div className='container'>
+        <h3>Orders</h3>
         <hr/>
         <div>
         
@@ -60,6 +60,7 @@ const Order = () =>
                     <th>Order Date</th>
                     <th>Order Category</th>
                     <th>unitPrice</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>

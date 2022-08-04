@@ -16,9 +16,9 @@ function App() {
         <div className='container'>
             <Switch>
               <Route exact  path = "/" component = {ListProducts}></Route>
-              <Route path = "/Order" component = {Order}></Route>
+              <Route path = "/Orders" component = {Order}></Route>
               <Route path = "/Cart" component = {Cart}></Route>
-              <Route path = "/users" component = {User}></Route>
+              <Route path = "/Users" component = {User}></Route>
             </Switch>
         </div>
       </Router>

@@ -37,6 +37,8 @@ const styles =
 
   return (
     <div className='container all-item'>
+      <h3>All Products</h3>
+      <hr/>
       <div className='card-group'>
         {   products.map(product => ( 
           <div className='my-3 mx-3 d-flex' key={product.productId}>
