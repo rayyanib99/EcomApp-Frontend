@@ -37,19 +37,21 @@ const styles = {
         {   products.map(product => ( 
           <div className='my-3 mx-3 d-flex' key={product.productId}>
             <div className='card my-card'><a id='mylink' href="#">
-            <img className='card-img-top' src={product.image} style={styles} width="100" height="200"/>
+            <img className='card-img-top' src={product.productImage} style={styles} width="100" height="200"/>
             <div className='card-body text-dark'>
               <h4 className='card-title text-left'>{product.name}</h4>
               <h5 className='price text-left'>Price: ${product.unitPrice}</h5>
-              <h5 className='category text-left'>Category: {product.category}</h5>
-              <h5 className='status2 text-left'>{product.status}</h5>
-              <h5 className='inventory text-left'>{product.inventory} pieces remaining.</h5>
+              <h5 className='category text-left'>Category: {product.productCategory}</h5>
+              <h5 className='decription text-left'>Description: {product.productDescription}</h5>
+              <h5 className='condition text-left'>Condition: <span id='mycon' >{product.productCondition}</span></h5>
+              <h5 className='status2 text-left'>{product.productStatus}</h5>
+              <h5 className='inventory text-left'>{product.productInventory} pieces remaining.</h5>
             </div>
             </a>
             <div className="card-footer">  
                 <div className="mx-1 d-flex justify-content-between"> 
-                    <a href='#' className='btn btn-primary'>Buy Now</a>
-                    <a className='btn btn-outline-primary' href='#'>Add to Bag</a>
+                    <a href='#' className='btn btn-primary' id='mybtn4'>Buy Now</a>
+                    <a className='btn btn-outline-primary' href='#' id='mybtn5'>Add to Bag</a>
                   </div>
               </div>
             </div>

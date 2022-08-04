@@ -31,7 +31,7 @@ function Navbar() {
                     <div className="d-flex d-none d-md-flex flex-row align-items-center">     
                         <div className="d-flex flex-column ms-2">
                             <button className="btn" id='mybtn3'>
-                            <div><span className="shop-bag"><i className='bx bxs-shopping-bag'></i></span>Total</div>
+                            <div className="total"><span className="shop-bag"><i className='bx bxs-shopping-bag'></i></span>Total</div>
                               <div><span className="fw">$27.90</span></div>
                             </button>
                         </div> 
@@ -45,6 +45,7 @@ function Navbar() {
                                 </button>
                                 <div className="dropdown-content">
                                     <a href="#"><i className="fa fa-user"></i> My Account</a>
+                                    <a href="#"><i className="fa fa-scroll"></i> My Orders</a>
                                     <a href="#"><i className="fa fa-cog"></i> Settings</a>
                                     <a href="#"><i className="fa fa-sign-out-alt"></i> Sign out</a>
                                 </div>
