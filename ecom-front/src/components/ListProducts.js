@@ -40,7 +40,8 @@ const styles =
       <h3>All Products</h3>
       <hr/>
       <div className='card-group'>
-        {   products.map(product => ( 
+        {   products.map(product => 
+        ( 
           <div className='my-3 mx-3 d-flex' key={product.productId}>
             <div className='card my-card'><a id='mylink' href="#">
             <img className='card-img-top' src={product.productImage} style={styles} width="100" height="200"/>

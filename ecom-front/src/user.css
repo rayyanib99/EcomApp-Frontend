@@ -1,0 +1,65 @@
+#addbtn:hover
+{
+    background-color: rgb(160, 211, 231);
+    color: black;
+    border-color: rgb(160, 211, 231);
+}
+
+#addbtn
+{
+    width: auto;
+    height: 28px;
+    background-color: #0275d8;
+    color: white;
+    margin-top: -35px;
+    margin-bottom: -22px;
+    margin-right: -1140px;
+}
+
+#editbtn:hover
+{
+    background-color: rgb(160, 211, 231);
+    color: black;
+    border-color: rgb(160, 211, 231);
+}
+
+#editbtn
+{
+    width: auto;
+    height: 25px;
+    background-color: #0275d8;
+    color: white;
+    margin-right: 4px;
+}
+
+#deletebtn:hover
+{
+    background-color: #eb8c89;
+    color: black;
+    border-color: #eb8c89;
+}
+
+#deletebtn
+{
+    width: auto;
+    height: 25px;
+    background-color: #d9534f;
+    color: white;
+}
+
+#title
+{
+    margin-top: 0px;
+    margin-bottom: -10px;
+    font-weight: bolder;
+}
+
+.table
+{
+    background-color:rgb(186, 223, 236);;
+}
+
+#tableHeader
+{
+    background-color:rgb(49, 170, 218);
+}
