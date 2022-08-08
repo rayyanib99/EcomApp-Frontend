@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import userServices from '../services/userServices';
 import '../user.css';
 
@@ -9,7 +9,7 @@ export const User = () =>
  
     const init = () => 
     {
-        userServices.getAll()
+        userServices.getAllUsers()
         .then(response => 
         {
             console.log('Printing all the Users in Console', response.data);
@@ -29,10 +29,10 @@ export const User = () =>
     const removeUser = (id) => 
     {
         console.log('Printing id', id);
-        userServices.remove(id)
+        userServices.deleteUser(id)
         .then(response => 
         {
-            console.log("Order removed successfully", response.data);
+            console.log("User removed successfully", response.data);
             init();
         })
         .catch(error => 
@@ -45,21 +45,6 @@ export const User = () =>
     {
         console.log('Printing id', data);
         userServices.update(data)
-        .then(response => 
-        {
-            console.log("User updated successfully", response.data);
-            init();
-        })
-        .catch(error => 
-        {
-            console.log("Something went wrong", error);
-        })
-    }
-
-    const addUser = (data) => 
-    {
-        console.log('Printing id', data);
-        userServices.create(data)
         .then(response => 
         {
             console.log("User updated successfully", response.data);
@@ -84,32 +69,31 @@ export const User = () =>
         }
     }
 
-    const Delete = (data, id) =>
+    const Delete = (admin, id, fName, lName) =>
     {
-        if(data === "Yes")
+        if(admin === "Yes")
         {
             alert("Cannot Delete Admin Account.")
         }
 
         else
         {
-            removeUser(id)
+            var message = window.confirm("CAUTION: " + fName + " " + lName + " will be deleted permanently.");
+            if(message === true)
+            {
+                removeUser(id)
+            }
         }
     }
 
   return (
     <div>
         <div className='container'>
-        <div><h3 id='title'>Users</h3></div>
-        <div><button className="btn btn" id='addbtn' onClick={() => 
-        {
-            addUser(users)
-        }}>
-        Add New User
-        </button></div>
+        <div><h3 id='title1'>Users</h3></div>
+        <a href="http://localhost:3000/add-user" className="btn btn" id='addbtn'>Add User</a>
         <hr/>
         <div>
-            <table className="table table-bordered ">
+            <table className="table">
                 <thead className='thead-dark'>
                   <tr id='tableHeader'>
                     <th>UserID</th>
@@ -152,7 +136,7 @@ export const User = () =>
 
                                     <button className='btn btn' id='deletebtn' onClick={() => 
                                     {
-                                        Delete(user.isAdmin, user.userId)
+                                        Delete(user.isAdmin, user.userId, user.firstName, user.lastName)
                                     }}>
                                     Delete
                                     </button>

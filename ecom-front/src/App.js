@@ -1,27 +1,25 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './Navbar';
 import ListProducts from './components/ListProducts';
-import Order from './components/Order';
-import Cart from './components/Cart';
-import  User  from './components/User';
+import User from './components/User';
+import AddUser from './components/AddUser';
  
-function App() {
+function App() 
+{
   return (
     <div className="App">
-    
-      <Router>
+    <Router>
        <Navbar/>
         <div className='container'>
             <Switch>
-              <Route exact  path = "/" component = {ListProducts}></Route>
-              <Route path = "/Orders" component = {Order}></Route>
-              <Route path = "/Cart" component = {Cart}></Route>
-              <Route path = "/Users" component = {User}></Route>
+              <Route exact path = "/" component = {ListProducts}></Route>
+              <Route path = "/users" component = {User}></Route>
+              <Route path = "/add-user" component = {AddUser} ></Route>
+              <Route path = "/edit-user/:id" component = {AddUser}></Route>
             </Switch>
         </div>
       </Router>
-     
     </div>
   );
 }

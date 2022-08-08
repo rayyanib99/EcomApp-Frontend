@@ -1,0 +1,243 @@
+#title2
+{
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+form
+{
+    margin-left: -100px;
+}
+
+#mycard
+{
+    border-color: black;
+    border: 1px solid;
+    width: 1290px;
+    margin-right: -40px;
+    background-color: rgb(49, 170, 218);
+}
+
+.form-label
+{
+    align-items: left;
+    margin-left:-620px;
+    font-size: small;
+}
+
+.cardheader
+{
+    background-color: rgb(49, 170, 218);
+}
+
+.card-body
+{
+    background-color: rgb(160, 211, 231);
+}
+
+#setAdmin
+{
+    margin-top: -5px;
+    margin-left: -30px;
+}
+
+#myadmin
+{
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+#myheader
+{
+    border-bottom: 1px solid black;
+}
+
+#mypass
+{
+    margin-left: -430px;
+}
+
+#insertbtn
+{
+    background-color: #0275d8;
+    color: white;
+    font-size: small;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#insertbtn:hover
+{
+    background-color: rgb(160, 211, 231);
+    color: black;
+}
+
+#mycd
+{
+    height: 50px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+#myfa
+{
+    color: rgb(206, 37, 37);
+    font-size: small;
+    margin-top: -50px;
+    margin-left: 1080px;
+    font-weight: bolder;
+}
+
+#mylink2
+{
+    margin-left: -1100px;
+    margin-top: -50px;
+    background-color: rgb(160, 211, 231);
+    color: black;
+}
+
+#mylink2:hover
+{
+    background-color: rgb(49, 170, 218);
+}
+
+#myfl1
+{
+    text-align: left;
+    margin-left: -340px;
+    margin-right: -5px;
+}
+
+#myfl2
+{
+    text-align: left;
+    margin-left: -340px;
+    margin-right: -5px;
+}
+
+#myfl3
+{
+    text-align: left;
+    margin-left: -370px;
+    margin-right: -5px;
+}
+
+#myfl4
+{
+    text-align: left;
+    margin-left: -190px;
+    margin-right: -5px;
+}
+
+#myfl5
+{
+    text-align: left;
+    margin-left: -95px;
+    margin-right: -5px;
+}
+
+#myfl6
+{
+    text-align: left;
+    margin-left: -995px;
+    margin-right: -5px;
+}
+
+#myfl7
+{
+    text-align: left;
+    margin-left: -60px;
+    margin-right: -5px;
+}
+
+#myfl8
+{
+    text-align: left;
+    margin-left: -160px;
+    margin-right: -5px;
+}
+
+#myfl9
+{
+    text-align: left;
+    margin-left: -250px;
+    margin-right: -5px;
+}
+
+#myfl10
+{
+    text-align: left;
+    margin-left: -360px;
+    margin-right: -5px;
+}
+
+#firstName
+{
+    width: 400px;
+    margin-left: 105px;
+}
+
+#lastName
+{
+    width: 400px;
+    margin-left: 105px;
+}
+
+#email
+{
+    width: 400px;
+    margin-left: 105px;
+}
+
+#phoneNumber
+{
+    width: 400px;
+    margin-left: 105px;
+}
+
+#password
+{
+    width: 400px;
+    margin-left: 105px;
+}
+
+#address
+{
+    width: 1040px;
+    margin-left: 105px;
+}
+
+#city
+{
+    width: 250px;
+    margin-left: 105px;
+}
+
+#state
+{
+    width: 250px;
+    margin-left: 50px;
+}
+
+#country
+{
+    width: 250px;
+    margin-left: -5px;
+}
+
+#zipcode
+{
+    width: 245px;
+    margin-left: -60px;
+}
+
+#marker
+{
+    position: relative;
+    left: 0px;
+    top: -2px;
+    color: rgb(206, 37, 37);
+}

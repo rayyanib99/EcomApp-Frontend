@@ -1,28 +1,28 @@
-import httpClient from "../http-common";
+import axios from 'axios'
 
-const getAll = () => 
+const ORDER_BASE_REST_API_URL = 'http://localhost:8080/api/v1/orders';
+
+class orderServices
 {
-    return httpClient.get('/orders');
+    getAllProducts()
+    {
+        return axios.get(ORDER_BASE_REST_API_URL)
+    }
+
+    createOrder(orders)
+    {
+        return axios.post(ORDER_BASE_REST_API_URL, orders)
+    }
+
+    getOrderById(orderId)
+    {
+        return axios.get(ORDER_BASE_REST_API_URL + '/' + orderId);
+    }
+
+    deleteProduct(orderId)
+    {
+        return axios.delete(ORDER_BASE_REST_API_URL + '/' + orderId);
+    }
 }
 
-const create = data => 
-{
-    return httpClient.post("/orders", data);
-}
-
-const get = id => 
-{
-    return httpClient.get(`/orders/${id}`);
-}
-
-const update = data => 
-{
-    return httpClient.put('/orders', data);
-}
-
-const remove = id => 
-{
-    return httpClient.delete(`/orders/${id}`);
-}
-
-export default { getAll, create, get, update, remove };
+export default new orderServices();

@@ -21,9 +21,9 @@ function Navbar()
                 </div>
                 <div className="col-md-8">
                 <div className="d-flex form-inputs">
-                <div className="title"><h3 className="header text-left">KamRay Shopping <i class="fa fa-shopping-cart"></i></h3></div>
-                    <input className="form-control" type="text" placeholder="Search any product..."/>
-                   <button className="btn" id='mybtn' name="save" type="submit"><i class="fa fa-search"></i>
+                <div className="title"><h3 className="header text-left">KamRay Shopping <i className="fa fa-shopping-cart"></i></h3></div>
+                    <input id='mysearch' className="form-control" type="text" placeholder="Search any product..."/>
+                   <button className="btn" id='mybtn' name="save" type="submit"><i className="fa fa-search"></i>
                     </button>
                   </div>
                 </div>

@@ -1,28 +1,33 @@
-import httpClient from "../http-common";
+import axios from 'axios'
 
-const getAll = () => 
+const CART_BASE_REST_API_URL = 'http://localhost:8080/api/v1/cart';
+
+class cartServices
 {
-    return httpClient.get('/cart');
+    getAllCartProducts()
+    {
+        return axios.get(CART_BASE_REST_API_URL)
+    }
+
+    addToCart(cart)
+    {
+        return axios.post(CART_BASE_REST_API_URL, cart)
+    }
+
+    getCartProductsById(cartId)
+    {
+        return axios.get(CART_BASE_REST_API_URL + '/' + cartId);
+    }
+
+    updateCart(cartId, cart)
+    {
+        return axios.put(CART_BASE_REST_API_URL + '/' + cartId, cart);
+    }
+
+    deleteCart(cartId)
+    {
+        return axios.delete(CART_BASE_REST_API_URL + '/' + cartId);
+    }
 }
 
-const create = data => 
-{
-    return httpClient.post("/cart", data);
-}
-
-const get = id => 
-{
-    return httpClient.get(`/cart/${id}`);
-}
-
-const update = data => 
-{
-    return httpClient.put('/cart', data);
-}
-
-const remove = id => 
-{
-    return httpClient.delete(`/cart/${id}`);
-}
-
-export default { getAll, create, get, update, remove };
+export default new cartServices();
