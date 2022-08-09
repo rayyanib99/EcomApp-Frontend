@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link, useHistory, useParams } from 'react-router-dom';
+import {useHistory, useParams } from 'react-router-dom';
 import userServices from '../services/userServices';
 import '../adduser.css';
 
@@ -43,9 +43,8 @@ export const AddUser = () =>
             userServices.addUser(user)
             .then(response => 
             {
-                document.write("User added successfully", response.data);
                 console.log("User added successfully", response.data);
-                history.push("/");
+                window.location.replace("http://localhost:3000/users");
             })
             .catch(error => 
             {
@@ -108,7 +107,7 @@ export const AddUser = () =>
                 </div>
                 <div className="col-6">
                     <label className="form-label" id='myfl5'>Temporary Password:<span id='marker'>*</span> (minimum 8 characters long) </label>
-                    <input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Set User's Temporary Password" minlength={8} required />
+                    <input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Set User's Temporary Password" minLength={8} required />
                 </div>
                 <div className="col-6">
                 <label className = "form-label" id='myadmin'> Is this User an Administrator?:<span id='marker'>*</span></label>
@@ -150,7 +149,7 @@ export const AddUser = () =>
                     <input type="text" className="form-control" id="zipcode" value={zipCode} onChange={(e) => setZipCode(e.target.value)} placeholder="Enter User's ZipCode" maxlength={5}/>
                 </div>
                 <div>
-                    <button id='insertbtn' onClick={(e) => saveUser(e)} className="btn btn">Create Account</button>
+                    <button id='insertbtn' disabled={!firstName || !lastName || !email || !email.includes('@') || !password || password.length < 8 || !country || !isAdmin} onClick={(e) => saveUser(e)} className="btn btn">Create Account</button>
                 </div>
             </form>
         </div>
