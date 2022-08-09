@@ -235,4 +235,15 @@
     font-weight: bold;
 }
 
+.mynavlink
+{
+    color: black;
+    text-decoration: none;
+}
+
+.mynavlink:hover
+{
+    color: black;
+    text-decoration: none;
+}
   
