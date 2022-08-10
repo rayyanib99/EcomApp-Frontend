@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import ListProducts from './components/ListProducts';
 import User from './components/User';
 import AddUser from './components/AddUser';
- 
+
 function App() 
 {
   return (

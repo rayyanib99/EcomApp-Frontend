@@ -42,9 +42,9 @@ export const AddUser = () =>
         {
             userServices.addUser(user)
             .then(response => 
-            {
-                console.log("User added successfully", response.data);
-                window.location.replace("http://localhost:3000/users");
+            {    
+                document.write('User Added Successfully!! You will be redirected to the Users page in 10 seconds...');   
+                setTimeout(Redirect, 10000);      
             })
             .catch(error => 
             {
@@ -52,6 +52,11 @@ export const AddUser = () =>
             })
         }
     }
+
+    function Redirect()
+    {
+        window.location = "http://localhost:3000/users"; 
+    } 
 
     useEffect(() => 
     {
@@ -149,7 +154,7 @@ export const AddUser = () =>
                     <input type="text" className="form-control" id="zipcode" value={zipCode} onChange={(e) => setZipCode(e.target.value)} placeholder="Enter User's ZipCode" maxlength={5}/>
                 </div>
                 <div>
-                    <button id='insertbtn' disabled={!firstName || !lastName || !email || !email.includes('@') || !password || password.length < 8 || !country || !isAdmin} onClick={(e) => saveUser(e)} className="btn btn">Create Account</button>
+                    <button id='insertbtn' disabled={!firstName || !lastName || !email || !email.includes('@') || !email.includes('.com') || !password || password.length < 8 || !country || !isAdmin} onClick={(e) => saveUser(e)} className="btn btn">Create Account</button>
                 </div>
             </form>
         </div>
