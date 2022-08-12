@@ -43,8 +43,8 @@ export const AddUser = () =>
             userServices.addUser(user)
             .then(response => 
             {    
-                document.write('User Added Successfully!! You will be redirected to the Users page in 10 seconds...');   
-                setTimeout(Redirect, 10000);      
+                document.write('User Added Successfully!! You will be redirected to the Users page in 5 seconds...');   
+                setTimeout(Redirect, 5000);      
             })
             .catch(error => 
             {
