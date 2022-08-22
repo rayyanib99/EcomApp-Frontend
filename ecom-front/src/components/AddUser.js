@@ -90,7 +90,7 @@ export const AddUser = () =>
         <div className="card" id='mycard'>
         <div className="card-header text-center" id='mycd'>Register User
         <div><a id='mylink2' href="http://localhost:3000/users" className="btn btn"><i className = "fa fa-arrow-left"></i> Back to Users</a></div>
-        <div id='myfa'><i className="fa fa-asterisk"> required fields</i></div>
+        <div id='myfa'><i className="fa fa-asterisk" id></i> <span style={{color: "black"}}>required fields</span></div>
         </div>
         <div className="card-body">
             <form className="row g-3">
